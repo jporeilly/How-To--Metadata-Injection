@@ -1,2 +1,0 @@
-31-12-2017;High Street Kensington;23233.5;;;
-31-12-2017;Camden;17232.2;;;
