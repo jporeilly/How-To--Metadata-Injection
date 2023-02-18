@@ -4,6 +4,7 @@
   <description/>
   <extended_description/>
   <job_version/>
+  <job_status>0</job_status>
   <directory>/</directory>
   <created_user>-</created_user>
   <created_date>2019/11/28 14:32:39.211</created_date>
@@ -600,7 +601,7 @@
   target_field_ordinal integer
 );
 
-create table users(
+create table customers(
   id int,
   first_name text,
   last_name text,
@@ -732,8 +733,36 @@ create table users(
     </hop>
   </hops>
   <notepads>
+    <notepad>
+      <note>Load Generic CSV files</note>
+      <xloc>400</xloc>
+      <yloc>112</yloc>
+      <width>163</width>
+      <heigth>30</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>11</fontsize>
+      <fontbold>Y</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>255</backgroundcolorblue>
+      <bordercolorred>255</bordercolorred>
+      <bordercolorgreen>255</bordercolorgreen>
+      <bordercolorblue>255</bordercolorblue>
+      <drawshadow>N</drawshadow>
+    </notepad>
   </notepads>
   <attributes>
+    <group>
+      <name>JobRestart</name>
+      <attribute>
+        <key>UniqueConnections</key>
+        <value>N</value>
+      </attribute>
+    </group>
     <group>
       <name>METASTORE.pentaho</name>
       <attribute>

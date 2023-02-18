@@ -609,7 +609,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>752</xloc>
+      <xloc>704</xloc>
       <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
@@ -766,7 +766,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
+      <xloc>640</xloc>
       <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
@@ -846,7 +846,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>896</xloc>
+      <xloc>800</xloc>
       <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1003,8 +1003,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
-      <yloc>528</yloc>
+      <xloc>640</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1072,7 +1072,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>752</xloc>
+      <xloc>704</xloc>
       <yloc>608</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1156,7 +1156,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>592</xloc>
+      <xloc>560</xloc>
       <yloc>608</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1415,7 +1415,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <accept_filenames>Y</accept_filenames>
+    <accept_filenames>N</accept_filenames>
     <passing_through_fields>N</passing_through_fields>
     <accept_field>filename</accept_field>
     <accept_stepname>Get Variables</accept_stepname>
@@ -1444,6 +1444,26 @@
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
       <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data1.txt</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data2.txt</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data2a.txt</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data3.txt</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
