@@ -585,6 +585,12 @@
         <item>Integer</item>
         <item>4</item>
       </line>
+      <line>
+        <item>active</item>
+        <item>active</item>
+        <item>String</item>
+        <item>5</item>
+      </line>
     </data>
     <attributes/>
     <cluster_schema/>

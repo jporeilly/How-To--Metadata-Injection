@@ -605,7 +605,8 @@ create table customers(
   id int,
   first_name text,
   last_name text,
-  age int 
+  age int,
+  active text 
 );</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>

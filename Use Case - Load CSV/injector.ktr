@@ -1448,26 +1448,6 @@
       <exclude_filemask/>
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>
-      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data1.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data2.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data2a.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <name>C:\GitHub\How-To--Metadata-Injection\Use Case - Load CSV\data3.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
       <type>CSV</type>
       <compression>None</compression>
     </file>

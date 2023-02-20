@@ -617,7 +617,7 @@
     </partitioning>
     <connection>db</connection>
     <schema/>
-    <table>results</table>
+    <table>customers</table>
     <commit>1000</commit>
     <truncate>N</truncate>
     <ignore_errors>N</ignore_errors>
