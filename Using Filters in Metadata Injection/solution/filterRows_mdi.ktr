@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>tr_filterRows_mdi</name>
+    <name>filterRows_mdi</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -508,6 +508,7 @@ Result "John" or "Fred" will logged as "TRUE"</note>
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>sv-false</name>
@@ -519,6 +520,7 @@ Result "John" or "Fred" will logged as "TRUE"</note>
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
       <field>
         <name>fr-mdi</name>
@@ -530,6 +532,7 @@ Result "John" or "Fred" will logged as "TRUE"</note>
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
+        <field_null_if/>
       </field>
     </fields>
     <data>
@@ -567,7 +570,7 @@ Result "John" or "Fred" will logged as "TRUE"</note>
     <specification_method>filename</specification_method>
     <trans_object_id/>
     <trans_name/>
-    <filename>${Internal.Entry.Current.Directory}/tr_filterRows_template.ktr</filename>
+    <filename>${Internal.Entry.Current.Directory}/filterRows_template.ktr</filename>
     <directory_path/>
     <source_step/>
     <source_output_fields>    </source_output_fields>

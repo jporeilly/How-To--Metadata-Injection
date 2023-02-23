@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>tr_2_phase_mdi</name>
+    <name>2_phase_mdi</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -536,58 +536,6 @@ Note:
     </hop>
   </order>
   <step>
-    <name>emi-fieldname</name>
-    <type>MetaInject</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <specification_method>filename</specification_method>
-    <trans_object_id/>
-    <trans_name/>
-    <filename>${Internal.Entry.Current.Directory}/tr_2_phase_template.ktr</filename>
-    <directory_path/>
-    <source_step/>
-    <source_output_fields>    </source_output_fields>
-    <target_file>${Internal.Entry.Current.Directory}/${Internal.Transformation.Name}_injected.ktr</target_file>
-    <no_execution>Y</no_execution>
-    <stream_source_step/>
-    <stream_target_step/>
-    <mappings>
-      <mapping>
-        <target_step_name>sv-mdi</target_step_name>
-        <target_attribute_key>META_RENAME</target_attribute_key>
-        <target_detail>Y</target_detail>
-        <source_step>dg-metadata</source_step>
-        <source_field>dest_fieldname</source_field>
-      </mapping>
-      <mapping>
-        <target_step_name>sv-mdi</target_step_name>
-        <target_attribute_key>META_NAME</target_attribute_key>
-        <target_detail>Y</target_detail>
-        <source_step>dg-metadata</source_step>
-        <source_field>source_fieldname</source_field>
-      </mapping>
-    </mappings>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>368</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>dg-metadata</name>
     <type>DataGrid</type>
     <description/>
@@ -648,6 +596,58 @@ Note:
       <draw>Y</draw>
     </GUI>
   </step>
+  <step>
+    <name>emi-fieldname</name>
+    <type>MetaInject</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <specification_method>filename</specification_method>
+    <trans_object_id/>
+    <trans_name/>
+    <filename>${Internal.Entry.Current.Directory}/2_phase_template.ktr</filename>
+    <directory_path/>
+    <source_step/>
+    <source_output_fields>    </source_output_fields>
+    <target_file>${Internal.Entry.Current.Directory}/${Internal.Transformation.Name}_injected.ktr</target_file>
+    <no_execution>Y</no_execution>
+    <stream_source_step/>
+    <stream_target_step/>
+    <mappings>
+      <mapping>
+        <target_step_name>sv-mdi</target_step_name>
+        <target_attribute_key>META_RENAME</target_attribute_key>
+        <target_detail>Y</target_detail>
+        <source_step>dg-metadata</source_step>
+        <source_field>dest_fieldname</source_field>
+      </mapping>
+      <mapping>
+        <target_step_name>sv-mdi</target_step_name>
+        <target_attribute_key>META_NAME</target_attribute_key>
+        <target_detail>Y</target_detail>
+        <source_step>dg-metadata</source_step>
+        <source_field>source_fieldname</source_field>
+      </mapping>
+    </mappings>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>368</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step_error_handling>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
@@ -656,10 +656,6 @@ Note:
   <attributes>
     <group>
       <name>explorerState</name>
-      <attribute>
-        <key>dg-metadata</key>
-        <value/>
-      </attribute>
     </group>
   </attributes>
 </transformation>

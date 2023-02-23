@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>tr_metadata_injection_template</name>
+    <name>metadata_injection_template</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -523,81 +523,16 @@
   </notepads>
   <order>
     <hop>
-      <from>dg-test_data</from>
-      <to>sv-mdi</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>sv-mdi</from>
       <to>tfo-output</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>dg-test_data</from>
+      <to>sv-mdi</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
-  <step>
-    <name>dg-test_data</name>
-    <type>DataGrid</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>name</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-        <field_null_if/>
-      </field>
-      <field>
-        <name>email</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-        <field_null_if/>
-      </field>
-    </fields>
-    <data>
-      <line>
-        <item>Peter Jones</item>
-        <item>pj@email.com</item>
-      </line>
-      <line>
-        <item>Sean Andrews</item>
-        <item>sa@email.com</item>
-      </line>
-      <line>
-        <item>James Brown</item>
-        <item>jb@email.com</item>
-      </line>
-    </data>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>256</xloc>
-      <yloc>256</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
   <step>
     <name>sv-mdi</name>
     <type>SelectValues</type>
@@ -679,6 +614,71 @@
     </remotesteps>
     <GUI>
       <xloc>544</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dg-test_data</name>
+    <type>DataGrid</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>name</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+        <field_null_if/>
+      </field>
+      <field>
+        <name>email</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+        <field_null_if/>
+      </field>
+    </fields>
+    <data>
+      <line>
+        <item>Peter Jones</item>
+        <item>pj@email.com</item>
+      </line>
+      <line>
+        <item>Sean Andrews</item>
+        <item>sa@email.com</item>
+      </line>
+      <line>
+        <item>James Brown</item>
+        <item>jb@email.com</item>
+      </line>
+    </data>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>272</xloc>
       <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>

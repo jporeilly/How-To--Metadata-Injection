@@ -699,7 +699,7 @@ injected transformation.</note>
     <specification_method>filename</specification_method>
     <trans_object_id/>
     <trans_name/>
-    <filename>${Internal.Entry.Current.Directory}/tr_2_phase_mdi_injected.ktr</filename>
+    <filename>${Internal.Entry.Current.Directory}/2_phase_mdi_injected.ktr</filename>
     <directory_path/>
     <group_size>1</group_size>
     <group_field/>
